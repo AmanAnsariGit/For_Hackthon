@@ -1,0 +1,166 @@
+.auth-container {
+  --max-width: 400px;
+  --margin: 3rem auto;
+  --padding: 2.5rem 3rem;
+  --background-color: #f9fafb;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: box-shadow 0.3s ease;
+  max-width: var(--max-width);
+  margin: var(--margin);
+  padding: var(--padding);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.auth-container:hover {
+  --box-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.auth-title {
+  --font-size: 2rem;
+  --font-weight: 800;
+  --margin-bottom: 1.5rem;
+  --text-align: center;
+  --color: #1f2937; /* gray-800 */
+  --letter-spacing: 1px;
+  --text-transform: uppercase;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  margin-bottom: var(--margin-bottom);
+  text-align: var(--text-align);
+  color: var(--color);
+  letter-spacing: var(--letter-spacing);
+  text-transform: var(--text-transform);
+}
+
+.auth-input {
+  --border: 1.5px solid #d1d5db; /* gray-300 */
+  --padding: 0.75rem 1rem;
+  --width: 100%;
+  --margin-bottom: 1.25rem;
+  --border-radius: 6px;
+  --font-size: 1.125rem;
+  --transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: var(--border);
+  padding: var(--padding);
+  width: var(--width);
+  margin-bottom: var(--margin-bottom);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  transition: var(--transition);
+}
+
+.auth-input:focus {
+  --outline: none;
+  --border-color: #2563eb; /* blue-600 */
+  --box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+  outline: var(--outline);
+  border-color: var(--border-color);
+  box-shadow: var(--box-shadow);
+}
+
+.auth-error {
+  --color: #dc2626; /* red-600 */
+  --margin-bottom: 1rem;
+  --font-size: 0.9rem;
+  --font-weight: 600;
+  --text-align: center;
+  color: var(--color);
+  margin-bottom: var(--margin-bottom);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  text-align: var(--text-align);
+}
+
+.auth-button {
+  --background-color: #2563eb; /* blue-600 */
+  --color: white;
+  --padding: 0.75rem 1.25rem;
+  --border-radius: 8px;
+  --width: 100%;
+  --font-weight: 700;
+  --cursor: pointer;
+  --border: none;
+  --font-size: 1.125rem;
+  --transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: var(--background-color);
+  color: var(--color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  width: var(--width);
+  font-weight: var(--font-weight);
+  cursor: var(--cursor);
+  border: var(--border);
+  font-size: var(--font-size);
+  transition: var(--transition);
+}
+
+.auth-button:hover {
+  --background-color-hover: #1d4ed8; /* blue-700 */
+  --transform: translateY(-2px);
+  background-color: var(--background-color-hover);
+  transform: var(--transform);
+}
+
+.auth-button:active {
+  --transform-active: translateY(0);
+  transform: var(--transform-active);
+}
+
+.auth-link {
+  --color: #2563eb; /* blue-600 */
+  --text-decoration: underline;
+  --display: block;
+  --text-align: center;
+  --margin-top: 1.5rem;
+  --font-size: 1rem;
+  --font-weight: 600;
+  --transition: color 0.3s ease;
+  color: var(--color);
+  text-decoration: var(--text-decoration);
+  display: var(--display);
+  text-align: var(--text-align);
+  margin-top: var(--margin-top);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  transition: var(--transition);
+}
+
+.auth-link:hover {
+  --color-hover: #1d4ed8; /* blue-700 */
+  color: var(--color-hover);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-container {
+    --margin: 1.5rem 1rem;
+    --padding: 2rem 1.5rem;
+    margin: var(--margin);
+    padding: var(--padding);
+  }
+
+  .auth-title {
+    --font-size: 1.5rem;
+    font-size: var(--font-size);
+  }
+
+  .auth-input {
+    --font-size: 1rem;
+    font-size: var(--font-size);
+  }
+
+  .auth-button {
+    --font-size: 1rem;
+    font-size: var(--font-size);
+  }
+
+  .auth-link {
+    --font-size: 0.875rem;
+    font-size: var(--font-size);
+  }
+}
